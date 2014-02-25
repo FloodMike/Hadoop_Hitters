@@ -18,7 +18,8 @@ import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 
 /**
- *
+ * This determines the average, maximimum and minimum for each category given to the reducer.
+ * The function will aslo out put those values to a file.
  * @author mike
  */
 public class HadoopReducer extends MapReduceBase implements Reducer<Text,DoubleWritable,Text,Text> {
