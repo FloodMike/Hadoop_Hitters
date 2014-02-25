@@ -1,0 +1,65 @@
+Batting Average
+	Average	0.2543547297297298
+	Maximum	0.337
+	Minimum	0.111
+
+Batting Average On Balls In Play (BABIP)
+	Average	0.27869594594594627
+	Maximum	0.362
+	Minimum	0.197
+
+Games
+	Average	837.4527027027027
+	Maximum	2456.0
+	Minimum	258.0
+
+Hits
+	Average	704.9172297297297
+	Maximum	2762.0
+	Minimum	90.0
+
+Home Runs
+	Average	66.86317567567568
+	Maximum	536.0
+	Minimum	0.0
+
+Isolated Power
+	Average	0.11969763513513505
+	Maximum	0.258
+	Minimum	0.011
+
+On Base Percentage
+	Average	0.3208412162162162
+	Maximum	0.418
+	Minimum	0.179
+
+Plate Appearances
+	Average	3030.8361486486488
+	Maximum	10433.0
+	Minimum	1000.0
+
+Runs
+	Average	337.2162162162162
+	Maximum	1460.0
+	Minimum	50.0
+
+Runs Batted In
+	Average	315.25506756756755
+	Maximum	1554.0
+	Minimum	31.0
+
+Slugging Percentage
+	Average	0.374069256756757
+	Maximum	0.552
+	Minimum	0.122
+
+Strike Out Percentage
+	Average	0.13572972972972963
+	Maximum	0.354
+	Minimum	0.022000000000000002
+
+Walk Percentage
+	Average	0.08499493243243243
+	Maximum	0.18899999999999997
+	Minimum	0.011000000000000001
+
