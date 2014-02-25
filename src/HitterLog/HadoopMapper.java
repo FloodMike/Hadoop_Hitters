@@ -1,7 +1,7 @@
 /*
  * HadoopMapper.java
  *
- * Created on Apr 15, 2012, 5:09:18 PM
+ * Created by Mike Flood
  */
 
 package HitterLog;
