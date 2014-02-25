@@ -25,6 +25,7 @@ public class HadoopMapper extends MapReduceBase implements Mapper<LongWritable,T
     // The Karmasphere Studio Workflow Log displays logging from Apache Commons Logging, for example:
     // private static final Log LOG = LogFactory.getLog("HitterLog.HadoopMapper");
 
+    // Defines a static constant for minimum plate appearances
     private final static int MINIMUM_PLATE_APPEARANCES    =    500;
     
     private DoubleWritable one = new DoubleWritable();
@@ -35,12 +36,15 @@ public class HadoopMapper extends MapReduceBase implements Mapper<LongWritable,T
             throws IOException {
             	
         String line = value.toString();
+        
+        // Splits the data given in each line so that the program can gather the stats for each individual player
         String[] stats = line.split("\"");
         
         if(!stats[1].equalsIgnoreCase("Name")) {
             
             if(Integer.parseInt(stats[7]) >= MINIMUM_PLATE_APPEARANCES) {
                 
+                // parses the stats by their location within the string array
                 stat.set("Games");
                 one.set(Double.parseDouble(stats[5]));
                 output.collect(stat, one);
