@@ -1,4 +1,3 @@
-
 /*
  * HadoopReducer.java
  *
@@ -27,31 +26,33 @@ public class HadoopReducer extends MapReduceBase implements Reducer<Text,DoubleW
     // private static final Log LOG = LogFactory.getLog("HitterLog.HadoopReducer");
 
 	@Override
-    public void reduce(Text key, Iterator<DoubleWritable> value, OutputCollector<Text, Text> output, Reporter reporter)
-            throws IOException {
+   	public void reduce(Text key, Iterator<DoubleWritable> value, OutputCollector<Text, Text> output, Reporter reporter)
+		throws IOException {
         // TODO code reducer logic here
         double	average	=	0.0,
-        		max		=	0.0,
-        		min		=	9999.0,
-        		number	=	0.0;
+        	max	=	0.0,
+        	min	=	9999.0,
+        	number	=	0.0;
         
-        int		total	=	0;
+        int	total	=	0;
         
         while (value.hasNext()) {
 
         	number	=	value.next().get();
         	average	+=	number;
         		
-        	if(number > max)
-        		max	=	number;
-        	if(number < min)
-        		min	=	number;
+        	if(number > max){
+        		max = number;
+        	}
+        	else if(number < min){
+        		min = number;
+        	}
         	
         	total++;
         	
         }
         
-        average	=	average / (double) total;
+        average = average / (double) total;
         
         output.collect(key, null);
         output.collect(new Text("\tAverage"), new Text(Double.toString(average)));
