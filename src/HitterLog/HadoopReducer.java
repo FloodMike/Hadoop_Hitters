@@ -1,7 +1,7 @@
 /*
  * HadoopReducer.java
  *
- * Created on Apr 15, 2012, 5:30:20 PM
+ * Created by Mike Flood
  */
 
 package HitterLog;
